@@ -1,0 +1,24 @@
+env:
+  TERM: xterm-256color
+
+key_bindings:
+    #- { key: U, mods: Control, action: ToggleViMode }
+    #Use colemak bindings
+    - { key: I, mode: Vi, action: Up      }
+    - { key: E, mode: Vi, action: Down    }
+    - { key: N, mode: Vi, action: Left    }
+    - { key: O, mode: Vi, action: Right   }
+    - { key: V, mods: Control, mode: Vi, action: ToggleNormalSelection   }
+    - { key: V, mode: Vi|~Search, action: ToggleBlockSelection    }
+    - { key: U, mode: Vi|~Search, action: ToggleViMode            }
+
+vi_mode_cursor:
+  text: CellBackground
+  cursor: CellForeground
+
+font:
+  # Use 8
+  size: 8
+  normal:
+    familiy: 3270\ Nerd\ Font
+    style: Regular
