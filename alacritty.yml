@@ -16,9 +16,66 @@ vi_mode_cursor:
   text: CellBackground
   cursor: CellForeground
 
+# Setting black background
+# window:
+  # color: Black
+
 font:
-  # Use 8
-  size: 8
+  # size: 9
+  size: 12
   normal:
     familiy: 3270\ Nerd\ Font
     style: Regular
+
+schemes:
+  ayu_dark: &ayu_dark
+    primary:
+      background: '0x0A0E14'
+      foreground: '0xB3B1AD'
+    normal:
+      black:   '0x01060E'
+      red:     '0xEA6C73'
+      green:   '0x91B362'
+      yellow:  '0xF9AF4F'
+      blue:    '0x53BDFA'
+      magenta: '0xFAE994'
+      cyan:    '0x90E1C6'
+      white:   '0xC7C7C7'
+    bright:
+      black:   '0x686868'
+      red:     '0xF07178'
+      green:   '0xC2D94C'
+      yellow:  '0xFFB454'
+      blue:    '0x59C2FF'
+      magenta: '0xFFEE99'
+      cyan:    '0x95E6CB'
+      white:   '0xFFFFFF'
+  high_contrast: &high_contrast
+    primary:
+      background: '0x444444'
+      foreground: '0xdddddd'
+    cursor:
+      text: '0xaaaaaa'
+      cursor: '0xffffff'
+    normal:
+      black:   '0x000000'
+      red:     '0xff0000'
+      green:   '0x00ff00'
+      yellow:  '0xffff00'
+      blue:    '0x0000ff'
+      magenta: '0xff00ff'
+      cyan:    '0x00ffff'
+      white:   '0xffffff'
+    bright:
+      black:   '0x000000'
+      red:     '0xff0000'
+      green:   '0x00ff00'
+      yellow:  '0xffff00'
+      blue:    '0x0000ff'
+      magenta: '0xff00ff'
+      cyan:    '0x00ffff'
+      white:   '0xffffff'
+
+# Set color scheme to high contrast
+
+colors: *ayu_dark
